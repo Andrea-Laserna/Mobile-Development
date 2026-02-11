@@ -25,7 +25,6 @@ class _MyHomePageState extends State<MyHomePage> {
               child:
                 Row (
                   mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text('Now Playing',
                         style: TextStyle(
