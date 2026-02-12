@@ -15,40 +15,34 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 50, 50, 50),
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            SizedBox(height: 30,),
 
-            SizedBox(height: 20,),
-
-            Container(
-              padding: EdgeInsets.all(16),
-              child:
-                Row (
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text('Now Playing',
-                        style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
+            Row (
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text('Now Playing',
+                    style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
+              ],
             ),
 
 
-          SizedBox(height: 100,),
+          SizedBox(height: 120,),
 
           Center(
             child: Container(
+              padding: EdgeInsets.all(3),
               height: 240,
               width: 300,
               decoration: BoxDecoration(
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(20)
               ),
-              padding: EdgeInsets.all(3),
               child: Icon(
                 Icons.music_note,
                 color: Colors.white,
@@ -91,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
           ),
+          
           Container(
             padding: EdgeInsets.only(left: 20, right: 20),
             child: Row(
